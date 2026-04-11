@@ -1,0 +1,8 @@
+p    {
+       color: black;
+	   background-color: yellow;
+	   font-size: medium;
+	   font-weight: bold;
+	   text-align: left;
+	   text-shadow: 2px 2px 4px gray;
+} 

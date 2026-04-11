@@ -1,0 +1,7 @@
+ol {
+	list-style-type: roman;
+	color: magenta;
+}
+ul {
+	list-style-type: square;
+	color: green; 
