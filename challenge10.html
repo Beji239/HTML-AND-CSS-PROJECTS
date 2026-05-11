@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Text Overlay Challenge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container holds both video and text */
+    .video-container {
+      position: relative;
+      width: 800px;
+      max-width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .video-container video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Text overlay positioned over video */
+    .video-text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      width: 85%;
+      text-align: center;
+      z-index: 1;
+      
+      color: white;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+    }
+
+    .video-text-overlay h2 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      color: #60a5fa;
+    }
+
+    .video-text-overlay p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      background-color: rgba(15, 23, 42, 0.75);
+      padding: 16px 24px;
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* Optional: darker gradient at bottom for readability */
+    .video-container::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      pointer-events: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .video-text-overlay h2 {
+        font-size: 1.8rem;
+      }
+      
+      .video-text-overlay p {
+        font-size: 1rem;
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://videos.pexels.com/video-files/853870/853870-hd_1920_1080_25fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="video-text-overlay">
+      <h2>Real-Time Threat Detection</h2>
+      <p>
+        SIEM and EDR solutions monitor network traffic and endpoints 24/7. 
+        Machine learning identifies anomalies faster than human analysts, 
+        reducing breach detection time from months to minutes.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

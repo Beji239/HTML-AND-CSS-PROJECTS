@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Over Image Challenge</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a1a1a;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container holds both image and text */
+    .image-container {
+      position: relative;
+      display: inline-block;
+      max-width: 700px;
+    }
+
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    /* Text positioned over the image */
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      
+      /* Makes text readable on any image */
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      
+      /* Optional: semi-transparent background box */
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 16px 32px;
+      border-radius: 8px;
+    }
+
+    /* Example: put text in bottom left instead */
+    .bottom-left {
+      top: auto;
+      bottom: 20px;
+      left: 20px;
+      transform: none;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img 
+      src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700" 
+      alt="Mountain landscape at sunset">
+    
+    <div class="overlay-text">
+      Adventure Awaits
+    </div>
+    
+    <!-- Swap the class to "overlay-text bottom-left" to try bottom-left positioning -->
+  </div>
+</body>
+</html>

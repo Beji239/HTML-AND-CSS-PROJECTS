@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Column Layout Challenge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+
+    /* Container for the columns */
+    .row {
+      display: flex;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Column styling */
+    .column {
+      /* 1. Specify the height and width of the columns */
+      width: 50%;
+      min-height: 400px;
+      
+      padding: 30px;
+      border-radius: 8px;
+      
+      /* 2. Assign a font color to text inside columns */
+      color: #2c3e50;
+    }
+
+    /* Left column specific styles */
+    .column-left {
+      background-color: #e3f2fd;
+    }
+
+    /* Right column specific styles */
+    .column-right {
+      background-color: #fce4ec;
+    }
+
+    .column h2 {
+      margin-bottom: 16px;
+      color: #1a237e;
+    }
+
+    .column p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* Responsive: Stack columns on small screens */
+    @media screen and (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column column-left">
+      <h2>Network Security</h2>
+      <p>Cybersecurity begins with securing your network perimeter. Firewalls filter incoming and outgoing traffic based on predetermined security rules.</p>
+      <p>Intrusion Detection Systems monitor network traffic for suspicious activity and known threats. IDS alerts security teams to potential breaches in real time.</p>
+      <p>Zero-trust architecture assumes no user or device is trusted by default. Every access request is verified regardless of location.</p>
+    </div>
+
+    <div class="column column-right">
+      <h2>Data Protection</h2>
+      <p>Encryption protects data at rest and in transit. AES-256 is the current standard for sensitive information across industries.</p>
+      <p>Regular backups are critical for ransomware recovery. Follow the 3-2-1 rule: three copies, two different media types, one offsite.</p>
+      <p>Access controls enforce least privilege. Users only get permissions needed for their role, reducing the impact of compromised credentials.</p>
+    </div>
+  </div>
+</body>
+</html>

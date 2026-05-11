@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One-Page Website</title>
+    <link rel="stylesheet" href="one_page_website (1).css">
+</head>
+<body>
+    <header id="main">
+        <h1>ONE PAGE HTML WEBSITE WITH CSS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#main">Main Page</a></li>
+            <li>
+                <a href="#">Pictures</a>
+                <ul class="dropdown">
+                    <li><a href="#pic1">Picture 1</a></li>
+                    <li><a href="#pic2">Picture 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#form">Comment Form</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <h2>About This Page</h2>
+            <p>This is a beginner HTML page for the CSS course. We are learning body, div, section, header, nav, ul, li and footer.</p>
+        </div>
+        
+        <div id="pic1">
+            <h2>Picture 1</h2>
+            <img src="images/pic1.jpg" alt="Picture 1">
+        </div>
+        
+        <div id="pic2">
+            <h2>Picture 2</h2>
+            <img src="images/pic2.jpg" alt="Picture 2">
+        </div>
+
+        <div id="form">
+            <h3>Please provide some basic information and leave your Comment about HTML!</h3>
+            <div>
+                <form>
+                    <input type="text" placeholder="Full Name:">
+                    <input type="email" placeholder="email:"><br>
+                    <input type="checkbox" id="Newsletter">
+                    <label for="Newsletter">Would you like to recieve monthly Newsletter?</label><br>
+                    <textarea placeholder="Type your Comment here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Benji Rabiee. All Rights Reserved - One Page Website</p>
+    </footer>
+</body>
+</html> 

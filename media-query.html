@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag: makes the page responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #60a5fa;
+      margin-bottom: 24px;
+    }
+
+    /* Base paragraph styling */
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-bottom: 16px;
+      color: #f1f5f9; /* Default color: light gray/white */
+      transition: color 0.3s ease;
+    }
+
+    /* Media query: applies when screen width is 599px or less */
+    @media screen and (max-width: 600px) {
+      p {
+        color: #3b82f6; /* Font color turns blue on small screens */
+      }
+      
+      body {
+        padding: 20px; /* Bonus: tighter padding on mobile */
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Media Query Demo</h1>
+  
+  <p>
+    Endpoint Detection and Response tools monitor every process running on your devices. 
+    When ransomware attempts to encrypt files, EDR can isolate the machine from the network 
+    in milliseconds before damage spreads.
+  </p>
+  
+  <p>
+    Resize your browser window to less than 600px wide. This paragraph text will change 
+    from light gray to blue when the media query activates.
+  </p>
+</body>
+</html>

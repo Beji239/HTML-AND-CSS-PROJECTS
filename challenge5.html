@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navbar Challenge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      /* Add top padding so content doesn't hide behind fixed navbar */
+      padding-top: 60px;
+    }
+
+    /* Fixed navbar container */
+    .navbar {
+      /* Makes navbar stay at top when scrolling */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      /* 1. Assign a background color */
+      background-color: #2c3e50;
+
+      /* Keep it above other content */
+      z-index: 1000;
+
+      /* Add shadow for depth */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 0;
+    }
+
+    .navbar a {
+      display: block;
+
+      /* 2. Assign a font color */
+      color: #ecf0f1;
+
+      text-decoration: none;
+      padding: 18px 24px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    /* 3. Add a hover effect */
+    .navbar a:hover {
+      background-color: #34495e;
+      color: #3498db;
+    }
+
+    /* Active/current page style */
+    .navbar a.active {
+      background-color: #3498db;
+      color: white;
+    }
+
+    /* Page content for demo */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      min-height: 600px;
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="section">
+      <h1>Home</h1>
+      <p>Welcome to the homepage. Scroll down to see the navbar stay fixed at the top.</p>
+      <p>IT SURE FEELS LIKE A FRONT END DEVELOPER BOOT CAMP!!!!</p>
+    </div>
+
+    <div id="about" class="section">
+      <h1>About</h1>
+      <p>This section tells you about us. The navbar is still visible at the top.</p>
+      <p>IT SURE FEELS LIKE A FRONT END DEVELOPER BOOT CAMP!!!!</p>
+    </div>
+
+    <div id="contact" class="section">
+      <h1>Contact</h1>
+      <p>Get in touch with us. Fixed navbar makes navigation easy from anywhere.</p>
+      <p>IT SURE FEELS LIKE A FRONT END DEVELOPER BOOT CAMP!!!!</p>
+    </div>
+  </div>
+</body>
+
+</html>

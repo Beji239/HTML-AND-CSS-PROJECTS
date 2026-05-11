@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Effect Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      padding: 24px;
+      background-color: #1e293b;
+      border-left: 4px solid #3b82f6;
+      border-radius: 8px;
+      
+      /* Smooth transition for hover changes */
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Hover effect for <p> elements */
+    p:hover {
+      background-color: #334155;
+      border-left-color: #60a5fa;
+      color: #f8fafc;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Multi-factor authentication is one of the most effective defenses against credential theft. 
+    Even if an attacker obtains your password through phishing or a data breach, MFA requires 
+    a second verification step like a code from your phone or biometric scan. Enable it on 
+    every account that supports it, especially email and financial services.
+  </p>
+</body>
+</html>

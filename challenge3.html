@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Styling Challenge</title>
+  <style>
+    /* Style the whole table */
+    table {
+      /* 1. Create a border around the table */
+      border: 2px solid #333;
+      
+      /* Makes borders collapse into single lines instead of double */
+      border-collapse: collapse;
+      
+      width: 60%;
+      margin: 40px auto; /* centers the table on the page */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style all table cells */
+    th, td {
+      /* 1. Add borders to individual cells */
+      border: 1px solid #666;
+      
+      /* 2. Add padding inside cells for breathing room */
+      padding: 12px 16px;
+      
+      text-align: left;
+    }
+
+    /* 3. Add background color to the top row */
+    thead tr {
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    /* Bonus: Zebra striping for readability */
+    tbody tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+
+    tbody tr:hover {
+      background-color: #e8f4ff;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Wireless Mouse</td>
+        <td>Electronics</td>
+        <td>$29.99</td>
+        <td>52</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>Stationery</td>
+        <td>$4.50</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Desk Lamp</td>
+        <td>Home Office</td>
+        <td>$34.00</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Coffee Mug</td>
+        <td>Kitchen</td>
+        <td>$12.99</td>
+        <td>87</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
